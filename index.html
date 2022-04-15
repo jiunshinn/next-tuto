@@ -1,0 +1,23 @@
+<html>
+
+<body>
+    <div id="app"></div>
+    <script type="text/javascript">
+        // app id를 가진 div 선택
+        const app = document.getElementById('app')
+        // h1 tag 생성
+        const header = document.createElement('h1')
+        // h1엘리먼트 생성
+        const headerContent = document.createTextNode(
+            'BlaBlaBla'
+        )
+        // header에 자식으로 headerContent를 넣어줌
+        header.appendChild(headerContent)
+        // app id에 자식으로 header를 넣어줌
+        app.appendChild(header)
+
+
+    </script>
+</body>
+
+</html>
