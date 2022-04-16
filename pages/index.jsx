@@ -30,7 +30,6 @@
 import { useState } from 'react'
 
 
-const app = document.getElementById("app")
 
 function createTitle(title) {
   if (title) {
@@ -52,7 +51,7 @@ function Subtitle({ subtitle }) {
 
 export default function HomePage() {
   const names = ['Jiun', 'Jihyun']
-  const [likes, setLikes] = useState()
+  const [likes, setLikes] = React.useState(0)
 
   function handleClick() {
     setLikes(likes + 1)
